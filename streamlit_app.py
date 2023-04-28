@@ -1,12 +1,15 @@
 import streamlit as st
+import numpy as np
 st.header('文件名：streamlit_app.py')
 st.header('30天学会Streamlit')
 
+url = 'https://30days.streamlit.app/?challenge=Day1'
 if st.button('时空传送门'):
      st.write('超级入门教程-点这里')
+     st.markdown(f'<a href="{url}" target="_blank">{url}</a>', unsafe_allow_html=True)
 else:
-     st.write('Goodbye') 
-
+     st.write('Goodbye')  
+     
 st.title('Customizing the theme of Streamlit apps')
 
 st.write('Contents of the `.streamlit/config.toml` file of this app')
